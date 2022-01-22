@@ -17,6 +17,8 @@ Structure of a .sif image file (little endian):
 +═══════+═════════════════════════════════════+
 ~~~
 
+# Funtions
+
 To load from file:
 ~~~
 int32_t sifLoadImage(const char* path, sifImage** image);
@@ -26,10 +28,10 @@ To write to file
 int32_t sifWriteImage(const char* path, sifImage** image);
 ~~~
 To unload a image
-~~~~
+~~~
 int32_t sifUnloadImage(sifImage** image);
-~~~~
+~~~
 To create an empty image
-~~~~
+~~~
 int32_t sifCreateImage(sifImage** image, uint32_t x, uint32_t y);
-~~~~
+~~~
